@@ -2,6 +2,8 @@
 Yurt
 ====
 
+.. image :: https://travis-ci.org/StompRocket/yurt.svg?branch=master
+
 A WIP Go CLI library
 
 Installation
