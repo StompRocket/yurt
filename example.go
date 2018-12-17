@@ -1,9 +1,9 @@
 package main
 
 import (
-    "./yurt/colors"
-    "./yurt/box"
-    "./yurt"
+    "github.com/StompRocket/colors"
+    "github.com/StompRocket/yurt/box"
+    "github.com/StompRocket/yurt"
     "fmt"
     "os"
 )
