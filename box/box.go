@@ -15,7 +15,7 @@ const (
     side = "─"
 )
 
-func Box(content string, color colors.Color) {
+func Box(content string, color string) {
     length := len(content)
 
     bar := strings.Repeat(side, length + 2)
@@ -24,9 +24,9 @@ func Box(content string, color colors.Color) {
     fmt.Printf(`%s%s%s%s
 %s %s %s
 %s%s%s%s
-`,  colors.ColorString(color),
+`,  color,
     topL, bar, topR, 
     up, content, up, 
     btmL, bar, btmR,
-    colors.ColorString(colors.Reset))
+    colors.Reset)
 }

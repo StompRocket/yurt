@@ -21,7 +21,7 @@ func (p *Parser) Command(match string, desc string, handler func([]string)) {
     cmd := strings.Split(match, " ")
     expr := "^"
     // translate all this to regex
-    for _, c := range cmd {
+    for i, c := range cmd {
         if strings.HasPrefix(c, "$") {
             switch c {
             case "$s":
@@ -32,8 +32,11 @@ func (p *Parser) Command(match string, desc string, handler func([]string)) {
         } else {
             expr += c
         }
-        expr += " "
+        if len(cmd)-1 != i {
+            expr += " "
+        }
     }
+    expr += "$"
 
     p.commands = append(p.commands, command{
         Expr: *regexp.MustCompile(expr),
@@ -44,7 +47,7 @@ func (p *Parser) Command(match string, desc string, handler func([]string)) {
 }
 
 func (p *Parser) Run(args []string) {
-    argstr := strings.Join(args[1:], " ") + " "
+    argstr := strings.Join(args[1:], " ")
     for _, cmd := range p.commands {
         matches := cmd.Expr.FindAllString(argstr, -1)
         if matches != nil {
