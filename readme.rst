@@ -5,7 +5,7 @@ Yurt
 .. image:: https://img.shields.io/travis/StompRocket/yurt.svg?style=for-the-badge
     :target: https://travis-ci.org/StompRocket/yurt
 
-.. image:: https://img.shields.io/badge/docs-godoc-brightgreen.svg?style=for-the-badge
+.. image:: https://img.shields.io/badge/godoc-reference-375EB1.svg?style=for-the-badge
     :target: https://godoc.org/github.com/StompRocket/yurt
 
 A WIP Go CLI library
