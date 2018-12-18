@@ -1,5 +1,6 @@
 package yurt
 
+// color constants with iota. Would be cool if it worked.
 const (
     Reset string = "\033[0m"
 
