@@ -1,9 +1,8 @@
-package box
+package yurt
 
 import (
     "strings"
     "fmt"
-    "../colors"
 )
 
 const (
@@ -28,5 +27,5 @@ func Box(content string, color string) {
     topL, bar, topR, 
     up, content, up, 
     btmL, bar, btmR,
-    colors.Reset)
+    Reset)
 }
