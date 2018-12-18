@@ -8,7 +8,14 @@ Yurt
 .. image:: https://img.shields.io/badge/godoc-reference-375EB1.svg?style=for-the-badge
     :target: https://godoc.org/github.com/StompRocket/yurt
 
+
 A WIP Go CLI library
+
+Docs
+----
+
+Read the docs on godoc, click the shield above, or read them offline with
+``godoc github.com/StompRocket/yurt`` or ``godoc .`` if you've cloned the repository.
 
 Installation
 ------------
@@ -60,6 +67,12 @@ Test
 ::
 
     $ go test
+    ╭──────────────╮
+    │ Hello, World │
+    ╰──────────────╯
+    ╭─────╮
+    │ Red │
+    ╰─────╯
     Called Default
     Called foo
     Called var foo
