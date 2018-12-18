@@ -49,3 +49,14 @@ comments
         // actually parse the args, and call the appropriate lambda
         p.Run(os.Args)
     }
+
+Test
+----
+
+::
+
+    $ go test
+    Called Default
+    Called foo
+    Called var foo
+    PASS
