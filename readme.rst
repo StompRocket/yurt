@@ -2,7 +2,8 @@
 Yurt
 ====
 
-.. image :: https://travis-ci.org/StompRocket/yurt.svg?branch=master
+.. image:: https://travis-ci.org/StompRocket/yurt.svg?branch=master
+    :target: https://travis-ci.org/StompRocket/yurt
 
 A WIP Go CLI library
 
